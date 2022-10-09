@@ -79,6 +79,14 @@ public class Silly implements Comparable<Silly>{
      *       strings (e.g. this.name = [first string] + [second string]).
      *       Make sure you document this method!
      */
+
+    /**
+     * Creates a new Silly object.
+     * This constructor takes in two int as an argument.
+     *
+     * @param stringOne a number for this Silly instance's name.
+     * @param stringTwo a number for this Silly instance's name.
+     */
     public Silly(String stringOne, String stringTwo) {
         this.name = stringOne + stringTwo; // Sets this.name to conc. of stringOne and stringTwo
     }
@@ -196,6 +204,7 @@ public class Silly implements Comparable<Silly>{
          *                .length() method.
          */
         // Check length of names between the two Silly objects
+        int i = 0;
         if (this.name.length() > other.name.length()) {
             return 1;
         }
